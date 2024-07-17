@@ -2,7 +2,7 @@
 
 :root {
     --gradient: linear-gradient(
-        69deg,
+        90deg,
         #6096B4,
         #93BFCF,
         #BDCDD6,
@@ -20,8 +20,8 @@ body {
     flex-direction: column;
     background-image: var(--gradient);
     background-size: 250%;
-    animation: background-animation 20s infinite alternate;
-    overflow: hidden;
+    animation: background-animation 10s infinite alternate;
+    overflow: scroll;
 }
 
 @keyframes background-animation {

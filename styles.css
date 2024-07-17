@@ -154,7 +154,7 @@ body {
 }
 
 .watermark {
-    position: absolute;
+    position: fixed;
     bottom: 1rem;
     left: 3rem;
     font-family: 'Poppins', sans-serif;

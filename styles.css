@@ -21,7 +21,8 @@ body {
     background-image: var(--gradient);
     background-size: 250%;
     animation: background-animation 10s infinite alternate;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @keyframes background-animation {

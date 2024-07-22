@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1 class="title">To-Do List Creator</h1>
-    <div class="input">
-    <input class="todo-input" id="task-source" type="text" maxlength="100" placeholder="A short description of your task...">
-    <button class="input-button" type="button" onclick="addTask()">Add to list</button>
+    <div class="scrollbox">
+        <h1 class="title">To-Do List Creator</h1>
+        <div class="input">
+        <input class="todo-input" id="task-source" type="text" maxlength="100" placeholder="A short description of your task...">
+        <button class="input-button" type="button" onclick="addTask()">Add to list</button>
+        </div>
+        <div id="destination">
+            <div class="todo-list" id="task-list">
+                <!-- tasks go here -->
+            </div>
+        </div>
+        <p class="watermark">made by<br>h3xagon</p>
     </div>
-    <div class="todo-list" id="task-list">
-        <!-- tasks go here -->
-    </div>
-    <p class="watermark">made by<br>h3xagon jayden ryan teoh ryan chow jitxiong jon evan keith ganbobin nihal</p>
 <script src="scripts.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 :root {
     --gradient: linear-gradient(
-        90deg,
+        45deg,
         #6096B4,
         #93BFCF,
         #BDCDD6,
@@ -15,14 +15,13 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    padding: 3rem;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background-image: var(--gradient);
     background-size: 250%;
-    animation: background-animation 10s infinite alternate;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    animation: background-animation 5s infinite alternate;
+    overflow: hidden;
 }
 
 @keyframes background-animation {
@@ -40,6 +39,16 @@ body {
     font-size: 5rem;
     color: #10475a;
     margin: 0.75rem;
+}
+
+.scrollbox {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .input {

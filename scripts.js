@@ -50,13 +50,13 @@ function deleteTask(caller) {
 }
 
 function populateStorage() {
-    localStorage.setItem("content", document.getElementById("task-list").outerHTML);
+    sessionStorage.setItem("content", document.getElementById("task-list").outerHTML);
     console.log("IMPORTANT")
     console.log(document.getElementById("task-list").outerHTML);
 }
 
 function loadSavedContent() {
-    const savedContent = localStorage.getItem("content");
+    const savedContent = sessionStorage.getItem("content");
     console.log(savedContent);
     
     oldContent = document.getElementById("task-list");

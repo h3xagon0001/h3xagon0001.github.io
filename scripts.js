@@ -66,5 +66,8 @@ function loadSavedContent() {
 }
 
 window.onload = (event) => {
-    loadSavedContent();
+    if (localStorage.getItem("content")) {
+        loadSavedContent();
+    }
+    else {}
 };

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>To-do List</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="scrollbox">
+        <h1 class="title">To-Do List</h1>
+        <div class="input">
+        <input class="todo-input" id="task-source" type="text" maxlength="100" placeholder="A short description of your task...">
+        <button class="input-button" type="button" onclick="addTask()">Add to list</button>
+        </div>
+        <div id="destination">
+            <div class="todo-list" id="task-list">
+                <!-- tasks go here -->
+            </div>
+        </div>
+        <p class="watermark">made by<br>h3xagon</p>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
